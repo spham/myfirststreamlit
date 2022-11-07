@@ -132,6 +132,7 @@ if __name__ == "__main__":
     df_sp = filtering(df_sp,sector_default_val,cap_default_val,option_sector,dividend_value,profit_value,cap_value)
     
     st.title("S&P500 Screener & Stock Prediction")
+    st.caption('Sylvain PHAM.')
     st.sidebar.title("search")
     st.write('Number of companies found : ', len(df_sp))
     st.dataframe(df_sp.iloc[:,1:])
